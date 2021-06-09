@@ -16,7 +16,7 @@ con.on('open',()=>{
 app.use(express.json()) // tell our express we wil use json its just like middlewares
 //here we are doing routing
 const bookRouter = require('./routers/Books') // import Books module which were crated in routers folder.
-app.use('/Books',bookRouter) // its working as middleware// if request come for /books then above line forward this request to our Books .js file
+app.use('',bookRouter) // its working as middleware// if request come for /books then above line forward this request to our Books .js file
 // for listen the server on port no 9000.
 app.listen(9000,()=>{
     console.log('server started')
